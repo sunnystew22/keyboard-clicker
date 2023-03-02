@@ -1,0 +1,62 @@
+Let's make a game!
+
+name:Keyboard clicker
+by:Sunnystew
+desc:Click a keyboard and make the best keyboard ever imagined!
+version:1.0
+
+Settings
+
+background:https://fixthephoto.com/blog/UserFiles/Image/333_1/best-rgb-mechanical-keyboard.png
+building cost increase:115%
+building cost refund:50%
+stylesheet:stuff/bigBlue.css
+
+Buttons
+
+*GetKey
+name:Get a key
+desc: Click this button to get a key! (The key amount you get with this button depends on how many button upgrades you have)
+icon:https://file.garden/Y4h_Yz_qkQx7Gzhn/KBC/kb.png
+on click:yield 1 key
+class:bigButton
+
+Resources
+
+*key|keys
+name:Keys
+desc:These are your keys, you use these to upgrade your keyboard.
+
+Buildings
+
+*b1
+name:LEGO keyboard assembly robot
+desc:Yeah, it's just as stupid as it sounds. Use Scratch and LEGO motors and sensors to make a keyboard assembly robot.
+cost:1 key
+on tick:yield 0.2 keys
+
+*b2
+name:Order from PCBWay
+desc:Makes the delivery of the PCBs and 3D-printed plastic, switches, and keys so much faster.
+cost:10 keys
+on tick:yield 1 key
+
+*b3
+name:3D printer
+desc:No need to wait for keys, switches and plastic! Just PCBs.
+cost:50 keys
+on tick:yield 5 keys
+
+Upgrades
+
+*u1
+name:Better building and increased speed
+desc: The LEGO robot is much more reliable now.
+cost:10 keys
+passive:multiply yield of b1 by 2
+
+*u2
+name:Ultra fast delivery
+desc:The PCBs, switches, and keys get delivered in 1 day!
+cost:20 keys
+passive:multiply yield of b2 by 3
