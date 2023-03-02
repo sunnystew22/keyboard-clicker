@@ -60,3 +60,9 @@ name:Ultra fast delivery
 desc:The PCBs, switches, and keys get delivered in 1 day!
 cost:20 keys
 passive:multiply yield of b2 by 3
+
+*u3
+name:Faster 3D printer
+desc:You bought a much faster 3D printer.
+cost:50 keys
+passive:multiply yield of b3 by 5
